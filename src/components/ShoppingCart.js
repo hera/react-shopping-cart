@@ -15,8 +15,8 @@ const ShoppingCart = props => {
 
 	return (
 		<div className="shopping-cart">
-			{cart.map(item => (
-				<Item key={item.id} {...item} removeItem={removeItem} />
+			{cart.map((item, key) => (
+				<Item key={key} {...item} removeItem={removeItem} />
 			))}
 
 			<div className="shopping-cart__checkout">
